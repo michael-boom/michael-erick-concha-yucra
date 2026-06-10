@@ -1,142 +1,265 @@
+```html
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Michael Erick Concha Yucra - Página Personal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Michael Erick Concha Yucra - Página Personal</title>
+
+<style>
+
+body{
+    background-color:#0b0b0b;
+    color:#f0f0f0;
+    font-family:Arial, sans-serif;
+    margin:0;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    font-size:50px;
+    color:#ffffff;
+}
+
+h2{
+    color:#c8d0db;
+    text-align:center;
+}
+
+p{
+    line-height:1.6;
+}
+
+hr{
+    width:70%;
+    border:1px solid #404040;
+}
+
+.contenedor{
+    width:80%;
+    margin:auto;
+}
+
+.boton{
+    display:inline-block;
+    margin:10px;
+    padding:12px 20px;
+    border:2px solid #c8d0db;
+    border-radius:20px;
+    text-decoration:none;
+    color:#c8d0db;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background-color:#c8d0db;
+    color:#0b0b0b;
+}
+
+.tarjeta{
+    border:1px solid #707070;
+    border-radius:15px;
+    padding:20px;
+    margin:15px;
+    background-color:#111111;
+    transition:0.3s;
+}
+
+.tarjeta:hover{
+    transform:scale(1.03);
+}
+
+.cursos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.tarjeta-curso{
+    width:280px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#a0a0a0;
+}
+
+</style>
+
 </head>
 
-<body bgcolor="#f2f2f2">
+<body>
 
-    <center>
-        <h1>Michael Erick Concha Yucra</h1>
-        <h2>Página personal</h2>
-    </center>
+<header>
 
-    <hr>
+<h1>Michael Erick Concha Yucra</h1>
 
-    <h2>Sobre mí</h2>
+<p>
+Estudiante de Ciencia de la Computación
+</p>
 
-    <p>
-        Mi nombre es Michael Erick Concha Yucra. Soy estudiante universitario de
-        Ciencia de la Computación. Me encuentro cursando el primer semestre y estoy aprendiendo sobre programación,
-        algoritmos, desarrollo web y temas relacionados con la tecnología.
-    </p>
+<a class="boton" href="https://github.com/Michael-Boom">
+GitHub
+</a>
 
-    <p>
-        Me considero una persona responsable, perseverante, activa y creativa. Busco mejorar poco a poco en mi carrera.
-        Esta es mi primera página y fue creada como parte de mi aprendizaje usando HTML básico.
-    </p>
+<a class="boton" href="https://www.linkedin.com/in/michael-erick-concha-yucra-1391a3414/">
+LinkedIn
+</a>
 
-    <hr>
+</header>
 
-    <h2>Información personal</h2>
+<hr>
 
-    <p><b>Nombre completo:</b> Michael Erick Concha Yucra</p>
-    <p><b>Carrera:</b> Ciencia de la Computación</p>
-    <p><b>Universidad:</b> Universidad Católica San Pablo</p>
-    <p><b>Ciudad:</b> Puno, Perú</p>
+<div class="contenedor">
 
-    <p>
-        <b>LinkedIn:</b>
-        <a href="https://www.linkedin.com/in/michael-erick-concha-yucra-1391a3414/">Mi perfil de LinkedIn</a>
-    </p>
+<h2>Sobre mí</h2>
 
-    <p>
-        <b>GitHub:</b>
-        <a href="https://github.com/Michael-Boom">Mi cuenta de GitHub</a>
-    </p>
+<div class="tarjeta">
 
-    <hr>
+<p>
+Mi nombre es Michael Erick Concha Yucra. Soy estudiante universitario de Ciencia de la Computación.
+Me encuentro cursando el primer semestre y estoy aprendiendo sobre programación, algoritmos,
+desarrollo web y temas relacionados con la tecnología.
+</p>
 
-    <h2>Cursos de la carrera</h2>
+<p>
+Me considero una persona responsable, perseverante, activa y creativa.
+Busco mejorar poco a poco en mi carrera.
+Esta es mi primera página y fue creada como parte de mi aprendizaje usando HTML básico.
+</p>
 
-    <table border="1" cellpadding="8" cellspacing="0">
-        <tr>
-            <th>Curso</th>
-            <th>Profesor</th>
-            <th>LinkedIn</th>
-        </tr>
+</div>
 
-        <tr>
-            <td>Introducción a la Computación</td>
-            <td>Ernesto Cuadros Vargas</td>
-            <td>
-                <a href="https://www.linkedin.com/in/ecuadrosv/">
-                    Perfil del profesor
-                </a>
-            </td>
-        </tr>
+</div>
 
-        <tr>
-            <td>Fundamentos de la programacion</td>
-            <td>Kelly Vizconde La Motta</td>
-            <td>
-                <a href="PEGA_AQUI_LINKEDIN_PROFESOR">
-                    Perfil del profesor
-                </a>
-            </td>
-        </tr>
+<hr>
 
-        <tr>
-          <td>Fundamentos matematicos 
-            para la programacion</td>
-            <td>Suarez Calcina Sabrina Graciela</td>
-            <td>
-                <a href="PEGA_AQUI_LINKEDIN_PROFESOR">
-                    Perfil del profesor
-                </a>
-            </td>
-        </tr> 
-        
-        <tr>
-            <td>Logica</td>
-            <td>Yahaira Byrne Rivera</td>
-            <td>
-                <a href="PEGA_AQUI_LINKEDIN_PROFESOR">
-                    Perfil del profesor
-                </a>
-            </td>
-        </tr>
-      
-        <tr>
-            <td>Comunicación</td>
-            <td>Angel David Rodriguez Cruz</td>
-            <td>
-                <a href="PEGA_AQUI_LINKEDIN_PROFESOR">
-                    Perfil del profesor
-                </a>
-            </td>
-        </tr>
+<div class="contenedor">
 
-        <tr>
-            <td>Introducción a la Vida Universitaria</td>
-            <td>Pierina Pacheco Leyton</td>
-            <td>
-                <a href="PEGA_AQUI_LINKEDIN_PROFESOR">
-                    Perfil del profesor
-                </a>
-            </td>
-        </tr>
-    </table>
+<h2>Información Personal</h2>
 
-    <hr>
+<div class="tarjeta">
 
-    <h2>Mis compañeros</h2>
+<p><b>Nombre completo:</b> Michael Erick Concha Yucra</p>
+<p><b>Carrera:</b> Ciencia de la Computación</p>
+<p><b>Universidad:</b> Universidad Católica San Pablo</p>
+<p><b>Ciudad:</b> Puno, Perú</p>
 
-    <p>
-        En esta parte se encuentran algunos enlaces a las páginas web de mis compañeros.
-    </p>
+</div>
 
-    <ul>
-        <li><a href="PEGA_AQUI_LINK_COMPAÑERO_1">Página de compañero 1</a></li>
-        <li><a href="PEGA_AQUI_LINK_COMPAÑERO_2">Página de compañero 2</a></li>
-        <li><a href="PEGA_AQUI_LINK_COMPAÑERO_3">Página de compañero 3</a></li>
-        <li><a href="PEGA_AQUI_LINK_COMPAÑERO_4">Página de compañero 4</a></li>
-    </ul>
+</div>
 
-    <center>
-        <p>Página creada por Michael Erick Concha Yucra</p>
-        <p>2026</p>
-    </center>
+<hr>
+
+<div class="contenedor">
+
+<h2>Cursos de la Carrera</h2>
+
+<div class="cursos">
+
+<div class="tarjeta tarjeta-curso">
+<h3>Introducción a la Computación</h3>
+<p>Profesor: Ernesto Cuadros Vargas</p>
+<a class="boton" href="https://www.linkedin.com/in/ecuadrosv/">
+LinkedIn
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Fundamentos de la Programación</h3>
+<p>Profesora: Kelly Vizconde La Motta</p>
+<a class="boton" href="#">
+LinkedIn
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Fundamentos Matemáticos para la Programación</h3>
+<p>Profesora: Sabrina Graciela Suárez Calcina</p>
+<a class="boton" href="#">
+LinkedIn
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Lógica</h3>
+<p>Profesora: Yahaira Byrne Rivera</p>
+<a class="boton" href="#">
+LinkedIn
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Comunicación</h3>
+<p>Profesor: Ángel David Rodríguez Cruz</p>
+<a class="boton" href="#">
+LinkedIn
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Introducción a la Vida Universitaria</h3>
+<p>Profesora: Pierina Pacheco Leyton</p>
+<a class="boton" href="#">
+LinkedIn
+</a>
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="contenedor">
+
+<h2>Mis Compañeros</h2>
+
+<div class="cursos">
+
+<div class="tarjeta tarjeta-curso">
+<h3>Compañero 1</h3>
+<a class="boton" href="#">
+Visitar página
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Compañero 2</h3>
+<a class="boton" href="#">
+Visitar página
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Compañero 3</h3>
+<a class="boton" href="#">
+Visitar página
+</a>
+</div>
+
+<div class="tarjeta tarjeta-curso">
+<h3>Compañero 4</h3>
+<a class="boton" href="#">
+Visitar página
+</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Página creada por Michael Erick Concha Yucra</p>
+<p>2026</p>
+
+</footer>
 
 </body>
 </html>
+```
