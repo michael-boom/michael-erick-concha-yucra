@@ -1,91 +1,142 @@
-```html
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 <title>Michael Erick Concha Yucra - Página Personal</title>
 
 <style>
 
 body{
+    margin:0;
     background-color:#0b0b0b;
     color:#f0f0f0;
     font-family:Arial, sans-serif;
-    margin:0;
 }
 
 header{
     text-align:center;
-    padding:40px;
+    padding:50px;
+}
+
+.perfil{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:3px solid #bfc7d5;
 }
 
 h1{
     font-size:50px;
-    color:#ffffff;
+    margin-bottom:5px;
 }
 
-h2{
-    color:#c8d0db;
+.subtitulo{
+    color:#bfc7d5;
+    font-size:18px;
+}
+
+.menu{
     text-align:center;
-}
-
-p{
-    line-height:1.6;
-}
-
-hr{
-    width:70%;
-    border:1px solid #404040;
-}
-
-.contenedor{
-    width:80%;
-    margin:auto;
+    margin-bottom:40px;
 }
 
 .boton{
     display:inline-block;
-    margin:10px;
-    padding:12px 20px;
-    border:2px solid #c8d0db;
-    border-radius:20px;
+    margin:8px;
+    padding:12px 22px;
+    border:2px solid #bfc7d5;
+    border-radius:30px;
+    color:#bfc7d5;
     text-decoration:none;
-    color:#c8d0db;
     transition:0.3s;
 }
 
 .boton:hover{
-    background-color:#c8d0db;
+    background-color:#bfc7d5;
     color:#0b0b0b;
 }
 
+.seccion{
+    width:85%;
+    margin:auto;
+    margin-top:40px;
+}
+
+.titulo{
+    text-align:center;
+    color:#ffffff;
+}
+
 .tarjeta{
-    border:1px solid #707070;
+    background-color:#141414;
+    border:1px solid #4a4a4a;
     border-radius:15px;
     padding:20px;
     margin:15px;
-    background-color:#111111;
     transition:0.3s;
 }
 
 .tarjeta:hover{
-    transform:scale(1.03);
+    border-color:#bfc7d5;
+    transform:translateY(-5px);
 }
 
-.cursos{
+.grid{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
 }
 
-.tarjeta-curso{
+.curso{
+    width:300px;
+}
+
+.companero{
+    width:170px;
+    text-align:center;
+}
+
+.inspiracion{
     width:280px;
+    text-align:center;
+}
+
+.inspiracion img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:2px solid #bfc7d5;
+}
+
+.hashtags{
+    text-align:center;
+    margin-top:20px;
+}
+
+.hashtags span{
+    display:inline-block;
+    margin:8px;
+    padding:10px 18px;
+    border:1px solid #bfc7d5;
+    border-radius:20px;
+    color:#bfc7d5;
+    transition:0.3s;
+}
+
+.hashtags span:hover{
+    background-color:#bfc7d5;
+    color:#0b0b0b;
 }
 
 footer{
     text-align:center;
+    margin-top:50px;
     padding:30px;
-    color:#a0a0a0;
+    color:#bfc7d5;
+}
+
+hr{
+    border:1px solid #333333;
+    width:80%;
 }
 
 </style>
@@ -96,11 +147,59 @@ footer{
 
 <header>
 
+<img src="imagenes/perfil.jpg" class="perfil">
+
 <h1>Michael Erick Concha Yucra</h1>
 
-<p>
-Estudiante de Ciencia de la Computación
+<p class="subtitulo">
+Ciencia de la Computación • UCSP
 </p>
+
+</header>
+
+<div class="menu">
+
+<a class="boton" href="#sobre">Sobre mí</a>
+<a class="boton" href="#cursos">Cursos</a>
+<a class="boton" href="#intereses">Intereses</a>
+<a class="boton" href="#inspiraciones">Inspiraciones</a>
+<a class="boton" href="#companeros">Compañeros</a>
+
+</div>
+
+<hr>
+
+<div class="seccion" id="sobre">
+
+<h2 class="titulo">Sobre mí</h2>
+
+<div class="tarjeta">
+
+<p>
+Mi nombre es Michael Erick Concha Yucra. Soy estudiante de Ciencia de la Computación en la Universidad Católica San Pablo.
+Actualmente me encuentro cursando el primer semestre y desarrollando conocimientos en programación, algoritmos, matemáticas y desarrollo web.
+</p>
+
+<p>
+Me considero una persona responsable, perseverante, activa y creativa. Siempre busco aprender nuevas habilidades y mejorar constantemente tanto en el ámbito académico como personal.
+</p>
+
+</div>
+
+</div>
+
+<div class="seccion">
+
+<h2 class="titulo">Información Personal</h2>
+
+<div class="tarjeta">
+
+<p><b>Nombre:</b> Michael Erick Concha Yucra</p>
+<p><b>Carrera:</b> Ciencia de la Computación</p>
+<p><b>Universidad:</b> Universidad Católica San Pablo</p>
+<p><b>Lugar de origen:</b> Puno, Perú</p>
+
+<p>
 
 <a class="boton" href="https://github.com/Michael-Boom">
 GitHub
@@ -110,143 +209,158 @@ GitHub
 LinkedIn
 </a>
 
-</header>
-
-<hr>
-
-<div class="contenedor">
-
-<h2>Sobre mí</h2>
-
-<div class="tarjeta">
-
-<p>
-Mi nombre es Michael Erick Concha Yucra. Soy estudiante universitario de Ciencia de la Computación.
-Me encuentro cursando el primer semestre y estoy aprendiendo sobre programación, algoritmos,
-desarrollo web y temas relacionados con la tecnología.
-</p>
-
-<p>
-Me considero una persona responsable, perseverante, activa y creativa.
-Busco mejorar poco a poco en mi carrera.
-Esta es mi primera página y fue creada como parte de mi aprendizaje usando HTML básico.
 </p>
 
 </div>
 
 </div>
 
-<hr>
+<div class="seccion" id="cursos">
 
-<div class="contenedor">
+<h2 class="titulo">Cursos de la Carrera</h2>
 
-<h2>Información Personal</h2>
+<div class="grid">
 
-<div class="tarjeta">
-
-<p><b>Nombre completo:</b> Michael Erick Concha Yucra</p>
-<p><b>Carrera:</b> Ciencia de la Computación</p>
-<p><b>Universidad:</b> Universidad Católica San Pablo</p>
-<p><b>Ciudad:</b> Puno, Perú</p>
-
-</div>
-
-</div>
-
-<hr>
-
-<div class="contenedor">
-
-<h2>Cursos de la Carrera</h2>
-
-<div class="cursos">
-
-<div class="tarjeta tarjeta-curso">
+<div class="tarjeta curso">
 <h3>Introducción a la Computación</h3>
-<p>Profesor: Ernesto Cuadros Vargas</p>
+<p><b>Docente:</b> Ernesto Cuadros Vargas</p>
+<p><b>Email:</b> ernesto.cuadros@ucsp.edu.pe</p>
+
 <a class="boton" href="https://www.linkedin.com/in/ecuadrosv/">
 LinkedIn
 </a>
 </div>
 
-<div class="tarjeta tarjeta-curso">
+<div class="tarjeta curso">
 <h3>Fundamentos de la Programación</h3>
-<p>Profesora: Kelly Vizconde La Motta</p>
-<a class="boton" href="#">
-LinkedIn
-</a>
+<p><b>Docente:</b> Kelly Vizconde La Motta</p>
+<p><b>Email:</b> kvizconde@ucsp.edu.pe</p>
 </div>
 
-<div class="tarjeta tarjeta-curso">
-<h3>Fundamentos Matemáticos para la Programación</h3>
-<p>Profesora: Sabrina Graciela Suárez Calcina</p>
-<a class="boton" href="#">
-LinkedIn
-</a>
+<div class="tarjeta curso">
+<h3>Fundamentos Matemáticos para Computación</h3>
+<p><b>Docente:</b> Sabrina Graciela Suárez Calcina</p>
+<p><b>Email:</b> sgsuarez@ucsp.edu.pe</p>
 </div>
 
-<div class="tarjeta tarjeta-curso">
+<div class="tarjeta curso">
 <h3>Lógica</h3>
-<p>Profesora: Yahaira Byrne Rivera</p>
-<a class="boton" href="#">
-LinkedIn
-</a>
+<p><b>Docente:</b> Yahaira Byrne Rivera</p>
+<p><b>Email:</b> yahaira.byrne@ucsp.edu.pe</p>
 </div>
 
-<div class="tarjeta tarjeta-curso">
-<h3>Comunicación</h3>
-<p>Profesor: Ángel David Rodríguez Cruz</p>
-<a class="boton" href="#">
-LinkedIn
-</a>
+<div class="tarjeta curso">
+<h3>Comunicación I</h3>
+<p><b>Docente:</b> Ángel Rodríguez Cruz</p>
+<p><b>Email:</b> angel.rodriguez@ucsp.edu.pe</p>
 </div>
 
-<div class="tarjeta tarjeta-curso">
+<div class="tarjeta curso">
 <h3>Introducción a la Vida Universitaria</h3>
-<p>Profesora: Pierina Pacheco Leyton</p>
-<a class="boton" href="#">
-LinkedIn
-</a>
+<p><b>Docente:</b> Pierina Pacheco Leyton</p>
+<p><b>Email:</b> ppacheco@ucsp.edu.pe</p>
 </div>
 
 </div>
 
 </div>
 
-<hr>
+<div class="seccion" id="intereses">
 
-<div class="contenedor">
+<h2 class="titulo">Mis Intereses</h2>
 
-<h2>Mis Compañeros</h2>
+<div class="hashtags">
 
-<div class="cursos">
+<span>⚽ #Fútbol</span>
+<span>🏀 #Baloncesto</span>
+<span>🎵 #Música</span>
+<span>💻 #Programación</span>
+<span>🤖 #Tecnología</span>
 
-<div class="tarjeta tarjeta-curso">
+</div>
+
+</div>
+
+<div class="seccion" id="inspiraciones">
+
+<h2 class="titulo">Mis Inspiraciones</h2>
+
+<div class="grid">
+
+<div class="tarjeta inspiracion">
+
+<img src="imagenes/messi.jpg">
+
+<h3>Lionel Messi</h3>
+
+<p>
+"Hay que luchar para alcanzar los sueños. Hay que sacrificarse y trabajar duro para ello."
+</p>
+
+</div>
+
+<div class="tarjeta inspiracion">
+
+<img src="imagenes/jordan.jpg">
+
+<h3>Michael Jordan</h3>
+
+<p>
+"He fallado una y otra vez en mi vida. Y por eso he tenido éxito."
+</p>
+
+</div>
+
+<div class="tarjeta inspiracion">
+
+<img src="imagenes/avicii.jpg">
+
+<h3>Avicii</h3>
+
+<p>
+"One day you'll leave this world behind, so live a life you will remember."
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="seccion" id="companeros">
+
+<h2 class="titulo">Mis Compañeros</h2>
+
+<div class="grid">
+
+<div class="tarjeta companero">
 <h3>Compañero 1</h3>
-<a class="boton" href="#">
-Visitar página
-</a>
+<a class="boton" href="#">Página</a>
 </div>
 
-<div class="tarjeta tarjeta-curso">
+<div class="tarjeta companero">
 <h3>Compañero 2</h3>
-<a class="boton" href="#">
-Visitar página
-</a>
+<a class="boton" href="#">Página</a>
 </div>
 
-<div class="tarjeta tarjeta-curso">
+<div class="tarjeta companero">
 <h3>Compañero 3</h3>
-<a class="boton" href="#">
-Visitar página
-</a>
+<a class="boton" href="#">Página</a>
 </div>
 
-<div class="tarjeta tarjeta-curso">
+<div class="tarjeta companero">
 <h3>Compañero 4</h3>
-<a class="boton" href="#">
-Visitar página
-</a>
+<a class="boton" href="#">Página</a>
+</div>
+
+<div class="tarjeta companero">
+<h3>Compañero 5</h3>
+<a class="boton" href="#">Página</a>
+</div>
+
+<div class="tarjeta companero">
+<h3>Compañero 6</h3>
+<a class="boton" href="#">Página</a>
 </div>
 
 </div>
@@ -255,11 +369,13 @@ Visitar página
 
 <footer>
 
-<p>Página creada por Michael Erick Concha Yucra</p>
-<p>2026</p>
+<p>&copy; 2026 Michael Erick Concha Yucra</p>
+
+<p>
+Todos los derechos reservados.
+</p>
 
 </footer>
 
 </body>
 </html>
-```
